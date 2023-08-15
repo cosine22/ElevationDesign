@@ -1,0 +1,9 @@
+ion-icon {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+ion-icon.md.hydrated {
+  padding-top: 5px;
+}

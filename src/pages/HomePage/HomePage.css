@@ -1,0 +1,161 @@
+h1 {
+  padding: 20px;
+  font-family: "Alta Caption", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  height: min-content;
+}
+
+.infoGridPic {
+  grid-area: 2 / 1 / 5 / 4;
+  width: fit-content;
+  display: inline-block;
+  max-width: 1320px;
+}
+
+.infoGrid img {
+  width: 500px;
+  height: 100%;
+  object-fit: contain;
+  padding-right: 10px;
+}
+.infoGridText {
+  background-color: black;
+  color: white;
+  grid-area: 2 / 4 / 5 / 6;
+}
+
+.areaText {
+  grid-area: 1 / 1 / 6 / 6;
+}
+
+.infoGrid h1 {
+  padding: 5%;
+}
+
+.infoGridText p {
+  font-size: medium;
+  padding: 5%;
+  line-height: 2;
+  color: silver;
+}
+
+@media screen and (min-width: 1000px) {
+  .infoGrid img {
+    width: fit-content;
+  }
+}
+
+.sections {
+  display: grid;
+  justify-content: space-evenly;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 5px;
+  color: white;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  justify-content: center;
+  background-color: black;
+}
+
+.counterTopsHalf {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: black;
+  max-width: 600px;
+}
+
+.cabinetsHalf {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: black;
+  max-width: 600px;
+}
+
+.sections img {
+  width: 400px;
+  height: 300px;
+  /* margin: 5px; */
+  padding-bottom: 10px;
+}
+
+.sections h3 {
+  padding-top: 3%;
+}
+
+.photoContainer {
+  position: relative;
+}
+
+.photoContainer .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: large;
+}
+
+.photoContainer .btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-decoration: underline;
+  z-index: inherit;
+}
+
+.contactUsSection {
+  background-color: black;
+  height: 20vh;
+  margin: 2% auto;
+  color: white;
+  width: 640px;
+}
+
+.contactUsSection h2 {
+  padding: 10px;
+}
+
+.contactUsSection button {
+  margin: 10px;
+  font-size: 20px;
+
+  border: 1px solid white;
+}
+
+.contactUsSection button:hover {
+  background-color: black;
+  color: white;
+}
+
+.counterTopsCabinets {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top {
+  grid-area: 1 / 2 / 3 / 4;
+  max-width: 1320px;
+}
+.btm {
+  grid-area: 3 / 2 / 5 / 4;
+}

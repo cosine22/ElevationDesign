@@ -1,0 +1,79 @@
+.ContactForm {
+  background-color: black;
+  min-width: 40%;
+  max-width: 600px;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+h2 h4 {
+  color: white;
+}
+
+form.ui.form {
+  display: inline-block;
+}
+
+div.required.field {
+  max-width: 90%;
+  padding-left: 25px;
+}
+
+.input-group-addon {
+  color: white;
+  margin: auto;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.contact-form {
+  font-size: large;
+}
+
+.form-group label {
+  color: white;
+}
+
+label::after {
+  float: right;
+}
+
+label[for="form-input-control-email"] {
+  padding-top: 10px;
+}
+
+form .btn-primary {
+  background-color: white;
+  border-color: white;
+  color: black;
+  margin: 10px;
+  margin-bottom: 15px;
+  justify-content: baseline;
+}
+
+form .btn-primary:hover {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+Form .field {
+  width: 300px;
+  font-size: large;
+}
+
+.ui.form .field > label {
+  color: white;
+}
+
+.form-control textarea {
+  max-height: 50px;
+}
+
+Form {
+  display: inline-block;
+}

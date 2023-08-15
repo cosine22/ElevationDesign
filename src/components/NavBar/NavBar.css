@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppings", sans-serif;
+  background-color: "#fff8f3";
+}
+
+img {
+  height: 15vh;
+  width: 20vw;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 3px solid #2f234f;
+}
+
+.navbar {
+  height: 60px;
+  background-color: "#fff8f3";
+  position: relative;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.logo li a {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Alta Caption";
+  color: #2f234f;
+  margin-top: 22px;
+}
+
+.logo li {
+  list-style-type: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  font-family: "Alta Light";
+  font-weight: 500;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: "#fff8f3";
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  button[aria-label="Next Slide"] svg {
+    display: none;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-top: 22px;
+  }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 5px;
+  }
+}
