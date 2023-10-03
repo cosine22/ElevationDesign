@@ -15,14 +15,7 @@ function App() {
       <div className="content">
         <BrowserRouter>
           <NavBar />
-
-          <Routes>
-            <Route exact path="/" Component={HomePage} />
-            <Route path="CounterTops" Component={CounterTops} />
-            <Route path="Cabinets" Component={Cabinets} />
-            <Route path="Tile" Component={Tile} />
-            <Route path="Contact" Component={Contact} />
-          </Routes>
+          <HomePage />
         </BrowserRouter>
       </div>
     </div>

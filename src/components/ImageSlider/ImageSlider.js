@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import Ionicons from "ionicons";
 import "./ImageSlider.css";
-import { AUTO } from "phaser";
 
 const slidesContainerStyles = {
   display: "flex",

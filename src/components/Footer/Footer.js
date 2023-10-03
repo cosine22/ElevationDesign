@@ -30,10 +30,10 @@ const Footer = () => {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <ul style={styles}>
           <ion-item>
-            <ion-icon item-start name="mail-outline"></ion-icon>:
-            elevancedesigngranite@gmail.com |{" "}
+            {/* <ion-icon item-start name="mail-outline"></ion-icon>: */}Email:
+            ElevanceDesignGranite@gmail.com |{" "}
           </ion-item>
-          <ion-icon name="call-outline"></ion-icon>: 111-222-3333
+          {/* <ion-icon name="call-outline"></ion-icon>*/}Phone: 111-222-3333
         </ul>
       </div>
       <ul style={styles}>

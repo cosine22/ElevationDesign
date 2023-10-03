@@ -67,7 +67,7 @@ const HomePage = () => {
           <img src={mapPicture} alt="infoGridImage" />
         </div>
         <div className="infoGridText">
-          <h1>Elevation Design LLC</h1>
+          <h1>Elevation Design</h1>
           <p>
             This is where I will write down some information about the services
             that Elevation Design provides that would be best seen on the home
@@ -75,13 +75,28 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-
-      <CounterTops id="#counterTops" />
-
-      <Cabinets />
-
+      <hr
+        className="line"
+        style={{
+          borderTop: "3px solid black",
+          opacity: 1,
+          width: "90vw",
+          margin: "0px auto",
+        }}
+      ></hr>
+      <div className="products">
+        <CounterTops id="#counterTops" />
+        <Cabinets />
+      </div>
+      <hr
+        style={{
+          borderTop: "3px solid black",
+          opacity: 1,
+          width: "90vw",
+          margin: "0 auto",
+        }}
+      ></hr>
       <ContactForm />
-
       <Footer />
     </div>
   );

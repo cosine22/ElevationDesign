@@ -7,9 +7,10 @@ const CounterTops = () => {
   return (
     <>
       <div
-        className="infoGrid"
+        className="parent"
+        id="counterTops"
         style={{
-          height: "40vh",
+          height: "70vh",
           maxWidth: "1320px",
           margin: "0 auto",
           marginBottom: "2vh",
@@ -17,23 +18,24 @@ const CounterTops = () => {
         }}
       >
         <h2
-          id="counterTops"
+          className="div1"
           style={{
             color: "white",
+            display: "evenly",
           }}
         >
           CounterTops
         </h2>
-        <div className="infoGridPic">
+        <div className="productPic">
           <img src={ex4} alt="infoGridImage" />
         </div>
         <div
-          className="infoGridText"
-          style={{ backgroundColor: "white", height: "30vh" }}
+          className="div3"
+          style={{ backgroundColor: "white", height: "100%" }}
         >
-          <h1 style={{ color: "black", textDecoration: "underline" }}>
+          <h2 style={{ color: "black", textDecoration: "underline" }}>
             Top of the line
-          </h1>
+          </h2>
           <p style={{ color: "black" }}>
             This is where I will write down some information about the services
             that Elevation Design provides that would be best seen on the home

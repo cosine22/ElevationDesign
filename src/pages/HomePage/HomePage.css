@@ -3,50 +3,378 @@ h1 {
   font-family: "Alta Caption", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.infoGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  justify-content: center;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  height: min-content;
+h2 .div3 {
+  float: left;
 }
 
-.infoGridPic {
-  grid-area: 2 / 1 / 5 / 4;
-  width: fit-content;
-  display: inline-block;
-  max-width: 1320px;
+.social-container ul {
+  padding-left: 0;
 }
 
-.infoGrid img {
-  width: 500px;
-  height: 100%;
-  object-fit: contain;
-  padding-right: 10px;
-}
-.infoGridText {
-  background-color: black;
-  color: white;
-  grid-area: 2 / 4 / 5 / 6;
+/* Half-tab Desktop */
+@media only screen and (min-width: 921px) and (max-width: 961px) {
+  .productPic img {
+    width: 600px !important;
+    height: 500px !important;
+    display: block !important;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-bottom: 4vh !important;
+    transform: translate(0, -30px) !important;
+  }
+
+  #cabinets {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 715px !important;
+  }
+
+  #counterTops {
+    height: 715px !important;
+  }
 }
 
-.areaText {
-  grid-area: 1 / 1 / 6 / 6;
+/* Laptop fullscreen */
+@media only screen and (min-width: 962px) and (max-width: 1599px) {
+  .productPic {
+    display: inline-block;
+  }
+
+  .parent {
+    max-width: 866px !important;
+  }
+
+  .productPic img {
+    padding: 0% !important;
+    margin: 0px Impo !important;
+    width: 650px !important;
+    height: 450px !important;
+    transform: translate(17%, -15%) !important;
+    /*
+    height: 500px !important;
+    display: block !important;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    margin-bottom: 4vh !important;
+    */
+  }
+
+  #cabinets {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 715px !important;
+  }
+
+  #counterTops {
+    height: 715px !important;
+  }
 }
 
-.infoGrid h1 {
-  padding: 5%;
+/* Tablet Vertical*/
+@media only screen and (min-width: 768px) {
+  .infoGrid {
+    height: 470px !important;
+  }
+  .areaText {
+    margin-bottom: 80px !important;
+  }
+
+  .products {
+    margin-bottom: 790px !important;
+  }
+
+  .div1 {
+    height: 65px;
+  }
 }
 
-.infoGridText p {
-  font-size: medium;
-  padding: 5%;
-  line-height: 2;
-  color: silver;
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+  .infoGrid {
+    height: 470px !important;
+  }
+  .areaText {
+    margin-bottom: 80px !important;
+  }
+
+  .products {
+    margin-bottom: 790px !important;
+  }
+
+  .div1 {
+    height: 65px;
+  }
+
+  .productPic img {
+    width: 600px !important;
+    height: 500px !important;
+    padding: 1vw;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(8%, -10%) !important;
+    padding-bottom: 0 !important;
+  }
+
+  #cabinets {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 715px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 850px) {
+  .productPic img {
+    width: 600px !important;
+    height: 500px !important;
+    padding: 1vw;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(12%, -10%) !important;
+    padding-bottom: 0 !important;
+  }
+
+  #cabinets {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 715px !important;
+  }
+
+  #counterTops {
+    height: 715px !important;
+  }
+}
+
+/* Surface Pro */
+@media only screen and (min-width: 851px) and (max-width: 920px) {
+  .productPic img {
+    width: 600px !important;
+    height: 500px !important;
+    padding: 1vw;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(19%, -10%) !important;
+    padding-bottom: 0 !important;
+  }
+
+  #cabinets {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 715px !important;
+  }
+
+  #counterTops {
+    height: 715px !important;
+  }
+}
+
+/* Vertical Mobile */
+@media only screen and (max-width: 450px) {
+  .react-slideshow-wrapper slide {
+    max-width: 100%;
+  }
+
+  .slideImg {
+    height: 200px;
+  }
+
+  .slideImg {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .infoGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .infoGridPic {
+    grid-area: 2 / 1 / 3 / 6;
+    display: inline-block;
+    max-height: 100%;
+  }
+
+  .infoGridPic img {
+    width: 80%;
+    height: 80%;
+  }
+
+  h2 {
+    grid-area: 1 / 2 / 1 / 3;
+  }
+
+  .infoGridText {
+    grid-area: 3 / 1 / 4 / 6;
+    background-color: black;
+    color: white;
+    margin-bottom: 3%;
+  }
+
+  .areaText {
+    grid-area: 1 / 1 / 2 /6;
+  }
+
+  .products {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 950px;
+    margin-top: 10px;
+  }
+
+  .ContactForm {
+    margin: 10px;
+  }
+
+  #contact h2,
+  #contact h4 {
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .productPic img {
+    width: 65vw;
+    height: 25vh;
+    padding: 1vw;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(28%, -25%);
+    padding-bottom: 0 !important;
+  }
+
+  .parent {
+    margin-bottom: 0vh !important;
+    height: 50vh !important;
+  }
+
+  #cabinets {
+    margin-top: 0vh !important;
+    margin-bottom: 0vh !important;
+  }
+
+  .div1 {
+    height: 5vh !important;
+  }
+
+  .div3 {
+    padding-bottom: 10px;
+  }
+}
+
+/* Horizontal mobile */
+@media only screen and (min-width: 667px) {
+  .infoGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    height: max-content;
+    padding-bottom: 470px;
+  }
+
+  .react-slideshow-wrapper slide {
+    width: 100%;
+  }
+
+  .slideImg {
+    max-height: 90vh;
+    object-fit: cover;
+  }
+
+  .infoGridPic {
+    grid-area: 2 / 1 / 6 / 4;
+    width: fit-content;
+    height: 250px;
+    display: inline-block;
+    max-width: 1320px;
+  }
+
+  .productPic img {
+    width: 50vw;
+    height: 55vh;
+    padding: 1vw;
+    right: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(40%, -5%);
+  }
+
+  .infoGrid img {
+    width: 500px;
+    height: 100%;
+    object-fit: contain;
+    padding-right: 10px;
+  }
+  .infoGridText {
+    background-color: black;
+    color: white;
+    grid-area: 2 / 4 / 6 / 6;
+  }
+
+  .areaText {
+    grid-area: 1 / 1 / 1 / 6;
+    margin-bottom: 20vh;
+  }
+
+  .infoGrid h1 {
+    padding: 5%;
+  }
+
+  .infoGridText p {
+    font-size: medium;
+    padding: 5%;
+    line-height: 2;
+    color: silver;
+    padding-top: 0;
+  }
+
+  .products {
+    margin-top: 60px;
+    margin-bottom: 200px;
+    height: 670px;
+  }
+
+  .parent {
+    height: 400px;
+    width: 90vw;
+  }
+
+  #counterTops.parent,
+  #cabinets.parent {
+    height: 100px;
+  }
+
+  #cabinets {
+    margin-top: 100px;
+  }
+
+  #contact {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .div3 {
+    margin-bottom: 30px;
+  }
+
+  .line {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1000px) {

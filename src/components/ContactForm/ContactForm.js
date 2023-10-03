@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Ionicons from "ionicons";
 import $ from "jquery";
 import emailjs from "emailjs-com";
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import { Form, Input, TextArea } from "semantic-ui-react";
 import "./ContactForm.css";
 import Swal from "sweetalert2";
 
